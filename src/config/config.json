@@ -1,0 +1,7 @@
+{
+    "spotify" : {
+        "web_api_base_url" : "https://api.spotify.com",
+        "client_id" : "cc06663b77eb4129898db96d87f41e26",
+        "secret" : "f7e93094aaca4807925f6cbf16f78252"
+    }
+}

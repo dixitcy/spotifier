@@ -8,13 +8,16 @@ import { SearchResult , SearchBar} from "./search/Search";
 import ArtistBanner from './artist-banner/ArtistBanner'
 import AlbumGrid from './album-grid/AlbumGrid'
 import AlbumSongs from './album-songs/AlbumSongs'
+import TrackPlayer from './track-player/TrackPlayer'
+import {authorizeSpotify} from '../../services/api.spotify';
 
 class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
 
-    };
+	};
+	authorizeSpotify();
   }
 
   render() {
@@ -45,6 +48,9 @@ class Dashboard extends Component {
 					<AlbumSongs></AlbumSongs>
 				  </div>
 			  </div>
+		  </div>
+		  <div className="track-player">
+			  <TrackPlayer></TrackPlayer>
 		  </div>
         </div>
       </div>

@@ -1,0 +1,49 @@
+{
+    "spotify" : {
+        "authorize" : {
+            "url" : "https://accounts.spotify.com/authorize",
+            "method" : "GET",
+            "example" : "https://accounts.spotify.com/authorize?client_id=5fe01282e94241328a84e7c5cc169164&redirect_uri=http:%2F%2Fexample.com%2Fcallback&scope=user-read-private%20user-read-email&response_type=token&state=123",
+            "response_char" : {
+                "type" : "queryString",
+                "values" : {
+                    "success" : {
+                        "access_token" : "",
+                        "token_type" : "",
+                        "expires_in" : "",
+                        "state" : ""
+                    },
+                    "error" : {
+                        "error" : "access_denied",
+                        "state" : ""
+                    }                    
+                }
+            },
+            "params" : {
+                "type" : "queryString",
+                "values" : {
+                    "client_id" : {
+                        "required" : true
+                    },
+                    "response_type" : {
+                        "required" : true,
+                        "default" : "token"
+                    },
+                    "redirect_uri" : {
+                        "required" : true,
+                        "default" : "http://localhost:3000/dashboard"
+                    },
+                    "state" : {
+                        "required" : false
+                    },
+                    "scope" : {
+                        "required" : false
+                    },
+                    "show_dialog" : {
+                        "required" : false
+                    }
+                }
+            }
+        }
+    }
+}
