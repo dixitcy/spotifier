@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  font-family: 'SF-Pro-Light';
+  position: relative;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Light';
+  src: local('SF-Pro-Light'), url(../../assets/fonts/SF-Pro-Display-Light.otf) format('opentype');
+}
+
+a {
+  text-decoration: none;
+  color :#464646
+}
+
+a:hover {
+  color : blue;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.brand {
+  position: absolute;
+  /* because appbar is 64px */
+  top: 16px;
+  /* left: 20px; */
+  font-size: 1.5em;
+  
+  z-index: 1;
+  
+  
+  padding: 0px 20px;
+}
+
+
+
