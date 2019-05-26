@@ -17,16 +17,17 @@ console.log(URLS);
         redirect_uri : URLS.spotify.authorize.params.values.redirect_uri.default
     }
     let url = buildUrl(URLS.spotify.authorize.url , queryParams);
-    var headers = new Headers();
-    // headers.append('Access-Control-Allow-Origin', "*");
-    console.log(url);
-    fetch(url , {
-        method : 'GET',
-        mode : 'cors'
-    })
-    .then(res => res.json())
-    .then(response => console.log(response))
-    .catch(err => console.log(err));
+    window.location = url;
+    // var headers = new Headers();
+    // // headers.append('Access-Control-Allow-Origin', "*");
+    // console.log(url);
+    // fetch(url , {
+    //     method : 'GET',
+    //     mode : 'cors'
+    // })
+    // .then(res => res.json())
+    // .then(response => console.log(response))
+    // .catch(err => console.log(err));
 }
 
 

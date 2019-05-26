@@ -31,7 +31,7 @@
                     },
                     "redirect_uri" : {
                         "required" : true,
-                        "default" : "http://localhost:3000/dashboard"
+                        "default" : "http://localhost:3000/"
                     },
                     "state" : {
                         "required" : false

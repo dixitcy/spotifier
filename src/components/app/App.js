@@ -1,36 +1,40 @@
 import React from "react";
 import "./App.css";
 import "./twemoji-awesome.css";
-import theme from "../../config/theme";
 import Dashboard from "../dashboard/dashboard.js";
-import Login from "../login/login";
-
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
-  Link,
-  Redirect,
   Switch
 } from "react-router-dom";
-import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import {authorizeSpotify} from '../../services/api.spotify';
 
 function App() {
-  // firebase.isInitialized().then((user) => {
-  // 	console.log(user);
-  // });
   var authUser = null;
+  const hash = window.location.hash
+.substring(1)
+.split('&')
+.reduce(function (initial, item) {
+  if (item) {
+    var parts = item.split('=');
+    initial[parts[0]] = decodeURIComponent(parts[1]);
+  }
+  return initial;
+}, {});
+window.location.hash = '';
+
+// Set token
+let _token = hash.access_token;
+if(!_token){
+	authorizeSpotify();
+}else{
+	// set token in localstorage and redux store
+}
   return (
     <Router style={{ height: "100%" }}>
       <div className="App">
         <Switch>
-          <Redirect exact from="/" to="/dashboard" />
-
-          <Route
-            path="/login"
-            render={() => (authUser ? <Redirect to="/dashboard" /> : <Login />)}
-          />
-
-          <PrivateRoute path="/dashboard" component={Dashboard} />
+          <Route path="/" component={Dashboard} />
         </Switch>
       </div>
     </Router>

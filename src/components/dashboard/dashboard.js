@@ -9,7 +9,7 @@ import ArtistBanner from './artist-banner/ArtistBanner'
 import AlbumGrid from './album-grid/AlbumGrid'
 import AlbumSongs from './album-songs/AlbumSongs'
 import TrackPlayer from './track-player/TrackPlayer'
-import {authorizeSpotify} from '../../services/api.spotify';
+
 
 class Dashboard extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class Dashboard extends Component {
     this.state = {
 
 	};
-	authorizeSpotify();
+	
   }
 
   render() {
