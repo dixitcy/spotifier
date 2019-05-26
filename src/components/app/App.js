@@ -6,7 +6,7 @@ import Dashboard from "../dashboard/dashboard.js";
 import Login from "../login/login";
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Link,
   Redirect,
