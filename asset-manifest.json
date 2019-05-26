@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dixitcy/spotifier/static/css/main.b2fa2b9b.chunk.css",
-    "main.js": "/dixitcy/spotifier/static/js/main.90cd7d17.chunk.js",
-    "main.js.map": "/dixitcy/spotifier/static/js/main.90cd7d17.chunk.js.map",
-    "runtime~main.js": "/dixitcy/spotifier/static/js/runtime~main.2d806ea4.js",
-    "runtime~main.js.map": "/dixitcy/spotifier/static/js/runtime~main.2d806ea4.js.map",
-    "static/js/2.9f0b6fd0.chunk.js": "/dixitcy/spotifier/static/js/2.9f0b6fd0.chunk.js",
-    "static/js/2.9f0b6fd0.chunk.js.map": "/dixitcy/spotifier/static/js/2.9f0b6fd0.chunk.js.map",
-    "index.html": "/dixitcy/spotifier/index.html",
-    "precache-manifest.df9cc62bff1fb63ad641237a9a64f181.js": "/dixitcy/spotifier/precache-manifest.df9cc62bff1fb63ad641237a9a64f181.js",
-    "service-worker.js": "/dixitcy/spotifier/service-worker.js",
-    "static/css/main.b2fa2b9b.chunk.css.map": "/dixitcy/spotifier/static/css/main.b2fa2b9b.chunk.css.map",
-    "static/media/App.css": "/dixitcy/spotifier/static/media/SF-Pro-Display-Light.ac523705.otf"
+    "main.css": "/spotifier/static/css/main.98620f27.chunk.css",
+    "main.js": "/spotifier/static/js/main.f28ca31b.chunk.js",
+    "main.js.map": "/spotifier/static/js/main.f28ca31b.chunk.js.map",
+    "runtime~main.js": "/spotifier/static/js/runtime~main.49fc903c.js",
+    "runtime~main.js.map": "/spotifier/static/js/runtime~main.49fc903c.js.map",
+    "static/js/2.9f0b6fd0.chunk.js": "/spotifier/static/js/2.9f0b6fd0.chunk.js",
+    "static/js/2.9f0b6fd0.chunk.js.map": "/spotifier/static/js/2.9f0b6fd0.chunk.js.map",
+    "index.html": "/spotifier/index.html",
+    "precache-manifest.005629bc6d02f577a9c03672d4e88f8a.js": "/spotifier/precache-manifest.005629bc6d02f577a9c03672d4e88f8a.js",
+    "service-worker.js": "/spotifier/service-worker.js",
+    "static/css/main.98620f27.chunk.css.map": "/spotifier/static/css/main.98620f27.chunk.css.map",
+    "static/media/App.css": "/spotifier/static/media/SF-Pro-Display-Light.ac523705.otf"
   }
 }
