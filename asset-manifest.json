@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/spotifier/static/css/main.98620f27.chunk.css",
-    "main.js": "/spotifier/static/js/main.f28ca31b.chunk.js",
-    "main.js.map": "/spotifier/static/js/main.f28ca31b.chunk.js.map",
+    "main.js": "/spotifier/static/js/main.453593e8.chunk.js",
+    "main.js.map": "/spotifier/static/js/main.453593e8.chunk.js.map",
     "runtime~main.js": "/spotifier/static/js/runtime~main.49fc903c.js",
     "runtime~main.js.map": "/spotifier/static/js/runtime~main.49fc903c.js.map",
-    "static/js/2.9f0b6fd0.chunk.js": "/spotifier/static/js/2.9f0b6fd0.chunk.js",
-    "static/js/2.9f0b6fd0.chunk.js.map": "/spotifier/static/js/2.9f0b6fd0.chunk.js.map",
+    "static/js/2.b979d5b6.chunk.js": "/spotifier/static/js/2.b979d5b6.chunk.js",
+    "static/js/2.b979d5b6.chunk.js.map": "/spotifier/static/js/2.b979d5b6.chunk.js.map",
     "index.html": "/spotifier/index.html",
-    "precache-manifest.005629bc6d02f577a9c03672d4e88f8a.js": "/spotifier/precache-manifest.005629bc6d02f577a9c03672d4e88f8a.js",
+    "precache-manifest.78bf0a5f52e0dec5324649bc422cb580.js": "/spotifier/precache-manifest.78bf0a5f52e0dec5324649bc422cb580.js",
     "service-worker.js": "/spotifier/service-worker.js",
     "static/css/main.98620f27.chunk.css.map": "/spotifier/static/css/main.98620f27.chunk.css.map",
     "static/media/App.css": "/spotifier/static/media/SF-Pro-Display-Light.ac523705.otf"
