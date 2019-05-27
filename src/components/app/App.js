@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import "./twemoji-awesome.css";
 import Dashboard from "../dashboard/dashboard.js";
 import {
   BrowserRouter as Router,
