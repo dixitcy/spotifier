@@ -44,6 +44,30 @@
                     }
                 }
             }
+        },
+        "search" : {
+            "url" : "v1/search",
+            "method" : "GET",
+            "params" : {
+                "type" : "queryString",
+                "values" : {
+                    "q" : {
+                        "required" : true
+                    },
+                    "type" : {
+                        "required" : true,
+                        "default" : "token"
+                    },
+                    "limit" : {
+                        "required" : false,
+                        "default" : "5"
+                    },
+                    "offset" : {
+                        "required" : false,
+                        "default" : 0
+                    }
+                }
+            }            
         }
     }
 }

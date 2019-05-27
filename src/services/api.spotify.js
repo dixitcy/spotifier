@@ -2,13 +2,32 @@ import config from '../config/config';
 import URLS from '../constants/URLS.json';
 
 
+export const searchSpotify = (searchString) => {
+    let queryParams = {
+        q : searchString,
+        type : "artist",
+        limit : URLS.spotify.search.params.values.limit.default
+    }
+    let url = buildUrl(config.spotify.web_api_base_url+URLS.spotify.search.url , queryParams);
+
+    var headers = new Headers();
+
+    headers.append('Accept' , '*');
+    headers.append('Authorization', `Bearer ${localStorage.getItem('access_token')}`);
+    headers.append('Content-Type', 'application/json');
+    console.log(url);
+    fetch(url , {
+        method : 'GET',
+        mode : 'cors',
+        headers : headers
+    })
+    .then(res => res.json())
+    .then(response => console.log(response))
+    .catch(err => console.log(err));
+}
+
 
 export const authorizeSpotify = () => {
-    console.log('config')
-console.log(config);
-
-console.log('URLS')
-console.log(URLS);
     // make an authorize call to spotify
     
     let queryParams = {

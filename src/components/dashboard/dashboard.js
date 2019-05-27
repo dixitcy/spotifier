@@ -1,34 +1,47 @@
 import React, { Component } from "react";
 import "./dashboard.css";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 import AppBar from "@material-ui/core/AppBar";
-import { Toolbar, IconButton } from "@material-ui/core";
+import { Toolbar } from "@material-ui/core";
 import { SearchResult , SearchBar} from "./search/Search";
 import ArtistBanner from './artist-banner/ArtistBanner'
-import AlbumGrid from './album-grid/AlbumGrid'
-import AlbumSongs from './album-songs/AlbumSongs'
-import TrackPlayer from './track-player/TrackPlayer'
-
+import AlbumGrid from './album-grid/AlbumGrid';
+import AlbumSongs from './album-songs/AlbumSongs';
+import TrackPlayer from './track-player/TrackPlayer';
+import {searchSpotify} from '../../services/api.spotify';
 
 class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+			searchString : ''
 	};
-	
-  }
+	}
+	handleChange = (e) => {
+		console.log(e.target.value);
+		e.preventDefault();
+		this.setState({searchString : e.target.value});
+}
+handleKeyPress = (e) => {
+	console.log(e);
+	if(e.key === 'Enter'){
+		console.log('ENTER');
+		// call search api
+		searchSpotify(this.state.searchString)
+	}
+}
 
   render() {
 
 
     return (
       <div>
-        <AppBar position="static" color="default">
+        <AppBar position="static" color="white">
           <Toolbar >
-			  <SearchBar></SearchBar>
-			  <div style={{flex : '1'}}></div>
+						<div style={{flex : '1 1 25%'}}>
+						<SearchBar handleKeyPress={this.handleKeyPress} handleChange={this.handleChange} searchText={this.state.searchString} ></SearchBar>
+						</div>
+			  
+			  <div style={{flex : '3 3 75%'}}></div>
 		  </Toolbar>
         </AppBar>
         <div className="dash-container">
