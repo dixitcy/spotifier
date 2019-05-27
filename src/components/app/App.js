@@ -28,7 +28,8 @@ let _token = hash.access_token;
 if(!_token){
 	authorizeSpotify();
 }else{
-	// set token in localstorage and redux store
+  // set token in localstorage and redux store
+  console.log(_token);
 }
   return (
     <Router style={{ height: "100%" }}>
